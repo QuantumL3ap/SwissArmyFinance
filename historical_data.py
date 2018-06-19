@@ -2,7 +2,7 @@ import urllib.request
 import json
 
 QUERY_URL = "https://www.alphavantage.co/query?function={REQUEST_TYPE}&apikey={KEY}&symbol={SYMBOL}&outputsize=full"
-API_KEY = "GET API KEY"
+API_KEY = "GET YOUR API KEY"
 
 #used to make API calls
 def _request(symbol, req_type):
@@ -44,5 +44,5 @@ def get_stock_dict(symbol, adjusted=True):
     requested_stock_dict = dict(zip(day, close_price))
     return requested_stock_dict
 
-    if __name__ == "__main__":
+if __name__ == "__main__":
         pass
