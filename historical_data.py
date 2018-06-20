@@ -43,6 +43,3 @@ def get_stock_dict(symbol, adjusted=True):
         close_price.append(market_day[1]['4. close'])
     requested_stock_dict = dict(zip(day, close_price))
     return requested_stock_dict
-
-if __name__ == "__main__":
-        pass
