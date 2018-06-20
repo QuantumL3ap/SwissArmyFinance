@@ -6,5 +6,3 @@ def expected_move(price, IV, DTE):
     high_price = price + std_dev
     low_price = price - std_dev
     return low_price, high_price
-
-print(expected_move(200, 40, 30))
