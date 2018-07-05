@@ -1,6 +1,6 @@
 from math import sqrt
 
-#function that accepts a stock price, IV, and DTE to computer expected move
+#function that accepts a stock price, IV, and DTE to compute expected move
 def expected_move(price, IV, DTE):
     std_dev = round((price * (IV / 100) * sqrt(DTE / 365)), 2)
     high_price = price + std_dev
